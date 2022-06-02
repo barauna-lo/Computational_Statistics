@@ -10,7 +10,7 @@ def specplus(nomeArquivo):
 	import math
 	import csv
 
-	__author__ = 'Paulo Giovani'
+	__author__ = 'Paulo Giovani; Updated for Luan Orion Baraúna (2022)'
 	__copyright__ = 'Copyright 2017, 3DBMO Project INPE'
 	__credits__ = ['Paulo Giovani', 'Reinaldo Roberto Rosa', 'Murilo da Silva Dantas']
 	__license__ = 'GPL'
@@ -18,8 +18,12 @@ def specplus(nomeArquivo):
 	__maintainer__ = 'Paulo Giovani'
 	__email__ = 'pg_faria@yahoo.com.br'
 
+	#Alocating `filename` dataset as `df`
 	df = nomeArquivo
+	#Saving `df` file as `.csv` extension
+	df.to_csv("df.csv", index=False, header=False)
 
+	#Conververting "df.csv" to a `.txt` file extension
 	with open("Swind4096.txt", "w") as my_output_file: 
 		with open("df.csv", "r") as my_input_file: [ my_output_file.write(" ".join(row)+'\n') for row in csv.reader(my_input_file)]
 		my_output_file.close()
