@@ -69,7 +69,7 @@ def psd(data):
 
 	# Define um intervalo para realizar o ajuste da reta
 	INICIO = 10
-	FIM = 800
+	FIM = len(data)-10
 	
 	# O vetor com o tempo é o tamanho do número de pontos
 	N = len(data)
