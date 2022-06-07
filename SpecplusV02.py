@@ -24,7 +24,7 @@ from scipy.stats import norm, genextreme
 
 from scipy.stats import skew, kurtosis
 
-!pip install kneed
+# !pip install kneed #TALVEZ PRECISE INSTALAR ANTES! FICAR ATENTO A ISSO AQUI!!!!
 
 
 
