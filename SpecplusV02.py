@@ -13,6 +13,20 @@ from scipy import stats, optimize
 import numpy as np
 import math
 import csv
+from matplotlib.patches import Polygon
+
+
+import pandas as pd
+from matplotlib.patches import Polygon
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.cluster import KMeans
+from scipy.stats import norm, genextreme
+
+from scipy.stats import skew, kurtosis
+
+!pip install kneed
+
+
 
 __author__ = 'Paulo Giovani; Updated for Luan Orion Baraúna (2022)'
 __copyright__ = 'Copyright 2017, 3DBMO Project INPE'
