@@ -532,7 +532,7 @@ def cullenfreyGEV(A,titulo):
     yGEV = [3, polyY2, poly2Y2, 3]    
     
     scale = 1
-    poly = Polygon(np.c_[x, y]*scale, facecolor='#1B9AAA', edgecolor='#1B9AAA', alpha=0.5,label='β')
+    poly = Polygon(np.c_[x, y]*scale, facecolor='#1B9AAA', edgecolor='#1B9AAA', alpha=0.5,label='beta func')
     ax.add_patch(poly)
 
     polyGEV = Polygon(np.c_[xGEV, yGEV]*scale, facecolor='red', edgecolor='red', alpha=0.5, label='GEV')
