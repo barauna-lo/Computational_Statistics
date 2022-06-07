@@ -500,7 +500,7 @@ def getCFparams(slist):
 
 #Espaço de C&F para A
 #Espaço de C&F para A
-def cullenfreyGEV(A):
+def cullenfreyGEV(A,titulo):
     # Gaussian x Non-Gaussian (The Kullen-Frey Parameter Space)
     m=A.mean()
     std=A.std()
@@ -547,7 +547,7 @@ def cullenfreyGEV(A):
     #ax.plot(x=x2, y=y2, fill="toself", name = "GEV")
     ax.plot(0, 3, label="Gaussian", marker='*', c='magenta')
     # ax.plot(ss, k, marker="o", c="green", label="Gaussian", linestyle='')
-    ax.plot(ss,k, marker="o", c="blue", label="Observation", linestyle='')
+    ax.plot(ss,k, marker="o", c="blue", label=str(titulo), linestyle='')
     #ax.plot(exoParams['skewness'], exoParams['kurtosis'], marker="o", c="red", label="Observation", linestyle='')
     ax.plot(0, 4.187999875999753, label="logistic", marker='+', c='black')
     ax.plot(0, 1.7962675925351856, label ="uniform", marker='*', c='black')
